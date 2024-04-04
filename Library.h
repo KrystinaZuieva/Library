@@ -10,7 +10,7 @@ class Library {
 private:
     string name;
     string address;
-    double schedule;
+    string schedule;
 public:
     Library();
 
@@ -18,7 +18,7 @@ public:
 
     Library(string new_name, string new_add);
 
-    Library(string new_name, string new_add, double new_schedule);
+    Library(string new_name, string new_add, string new_schedule);
 
     ~Library() {};
 
