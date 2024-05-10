@@ -8,6 +8,18 @@ add_executable(library main.cpp
         User.cpp
         Book.h
         Book.cpp
-        Library.h
-        Library.cpp
+        Bookclub.h
+        Bookclub.cpp
+        Fiction.h
+        Fiction.cpp
+        NonFiction.cpp
+        NonFiction.h
+        Children.cpp
+        Children.h
+        Order.cpp
+        Order.h
+        Manager.h
+        Menu.h
+        EBook.cpp
+        EBook.h
 )
