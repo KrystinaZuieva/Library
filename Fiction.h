@@ -23,15 +23,14 @@ public:
 
     Fiction(string &Title, string &Author, int Year, int Pages, double Prise);
 
+
     void displayInfo() const override {
-        cout << "Fiction Book - ";
         Book::displayInfo();
-        cout << "Genre " << genre << endl;
     }
 
-    friend ostream &operator<<(ostream &os, const Book &book);
+    friend ostream &operator<<(ostream &os, const Fiction &book);
 
-    friend istream &operator>>(istream &is, Book &book);
+    friend istream &operator>>(istream &is, Fiction &book);
 
     ~Fiction() override {};
 };
