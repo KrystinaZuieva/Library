@@ -23,14 +23,12 @@ public:
     NonFiction(string & Title, string & Author, int Year, int Pages, double Prise);
 
     void displayInfo() const override {
-        cout << "Non Fiction Book - ";
         Book::displayInfo();
-        cout << "Subject: " << subject << endl;
     }
 
-    friend ostream& operator<<(ostream& os, const Book& book);
+    friend ostream& operator<<(ostream& os, const NonFiction& book);
 
-    friend istream& operator>>(istream& is, Book& book);
+    friend istream& operator>>(istream& is, NonFiction& book);
 
     ~NonFiction() override {};
 
