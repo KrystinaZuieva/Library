@@ -23,14 +23,12 @@ public:
     Children(string &Title, string &Author, int Year, int Pages, double Prise);
 
     void displayInfo() const override {
-        cout << "Children Book - ";
         Book::displayInfo();
-        cout << "Recommended age: " << recommendedAge << endl;
     }
 
-    friend ostream& operator<<(ostream& os, const Book& book);
+    friend ostream& operator<<(ostream& os, const Children& book);
 
-    friend istream& operator>>(istream& is, Book& book);
+    friend istream& operator>>(istream& is, Children& book);
 
     ~Children() override {};
 };
